@@ -1,66 +1,50 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://yetz.com.br" target="_blank"><img src="https://yetz.com.br/wp-content/uploads/2021/09/Logos-Yetz_logo_yetz_original-3-1.svg" width="400" alt="Yetz Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+# Teste PHP Back-End
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## PROCESSO SELETIVO PARA VAGA DE PROGRAMADOR BACK END
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### DEFINIÇÕES INICIAIS
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+a) PRAZO: 1 Semana, a partir do recebimento desse documento.
 
-## Learning Laravel
+b) Não é necessário que você desenvolva tudo que está descrito nos requisitos, você pode focar naquilo que considera mais
+importante. Fique à vontade para entrar em contato e tirar dúvidas e/ou nePgociar o prazo de desenvolvimento;
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+c) Você deve subir seu projeto em um repositório no GitHub.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+d) Você deve colocar sua aplicação em produção em um webserver de sua escolha, por exemplo AWS ou HEROKU.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+e) Ao final responda o e-mail com suas considerações, apontando dificuldades e como as contornou.
 
-## Laravel Sponsors
+### TAREFA
+Para o processo seletivo precisamos que você desenvolva uma aplicação usando o framework LARAVEL em sua versão mais recente e um
+banco de dados MySQL. Como a atividade tem por objetivo demonstrar suas habilidades como desenvolvedor Back End, o Front End precisa
+apenas ser funcional.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+### DESCRIÇÃO DA APLICAÇÃO
+Um grupo de amigos, desenvolvedores, resolveram jogar futebol toda semana em um campo Society de Poços de Caldas.
+Após montar um grupo no WhatsApp com 25 pessoas, perceberam duas coisas:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+1. Em média 15 a 17 pessoas confirmavam presença no jogo.
 
-## Contributing
+2. Sempre perdiam 10 minutos de jogo para escolher os times com 5 jogadores de linha e 1 goleiro. Logo ficou claro que poderiam
+desenvolver uma aplicação que sorteasse as equipes, com base nas habilidades de cada jogador e assim poupar tempo.
+Essa é sua tarefa.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### REQUISITOS
+* Armazenar dados dos jogadores: Nome, nível (de 1 a 5, sendo 1 o pior e 5 o melhor) e se o jogador é goleiro(sim/não).
+* Permitir ao usuário marcar quem confirmou presença.
+* Definir o número de jogadores por time.
+* Sortear os jogadores em pelo menos dois times, considerando a quantidade de jogadores definidos e os que foram marcados como
+presentes.
+* Quando houver mais de dois times completos, é permitido ao último time ficar com o número de jogadores menor do que aquele definido
+pelo usuário.
+* Não permitir que um time tenha um número maior de jogadores do que foi determinado pelo usuário antes do sorteio.
+* Não permitir o sorteio, caso o número total de confirmados seja menor que Nj*2, sendo 'Nj' o número de jogadores por time (ex: para
+um sorteio com 5 jogadores por time, o mínimo de confirmados deve ser 10).
+* Não permitir mais de 1 goleiro no mesmo time.
+- Será um diferencial para o desenvolvedor, se a aplicação considerar o nível dos jogadores ao executar o sorteio, deixando os times o mais
+balanceado possível (ninguém quer jogar no time dos "perebas", nem jogar contra o time da "panelinha").
