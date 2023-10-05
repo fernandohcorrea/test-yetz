@@ -48,3 +48,15 @@ um sorteio com 5 jogadores por time, o mínimo de confirmados deve ser 10).
 * Não permitir mais de 1 goleiro no mesmo time.
 - Será um diferencial para o desenvolvedor, se a aplicação considerar o nível dos jogadores ao executar o sorteio, deixando os times o mais
 balanceado possível (ninguém quer jogar no time dos "perebas", nem jogar contra o time da "panelinha").
+
+
+---
+
+# Implementação
+
+
+### MER
+
+Modelo de entidade e relacionamento proposto.
+<p align="center"><img src="https://github.com/fernandohcorrea/test-yetz/blob/main/docs/Mer/mer.png?raw=true" width="400" alt="Yetz Logo"></p>
+
