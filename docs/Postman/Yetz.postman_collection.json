@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "dadd6e39-4809-42e9-9153-4f110f074045",
+		"name": "Yetz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "273446"
+	},
+	"item": [
+		{
+			"name": "soccer-fields",
+			"item": [
+				{
+					"name": "soccer-field",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_api}}/api/soccer-field",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"api",
+								"soccer-field"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "games",
+			"item": [
+				{
+					"name": "game",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_api}}/api/game",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"api",
+								"game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "game",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"scheduling_at\": \"2023-10-10\",\n    \"soccer_field_id\": 1,\n    \"num_team_players\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/api/game",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"api",
+								"game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "game/{game_id}/confirm-players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"players_ids\": [1,2,3,4,5,6,7,8,9,10,11,12,13,14]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_api}}/api/game/:game_id/confirm-players",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"api",
+								"game",
+								":game_id",
+								"confirm-players"
+							],
+							"variable": [
+								{
+									"key": "game_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "raffles",
+			"item": [
+				{
+					"name": "raffle",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
