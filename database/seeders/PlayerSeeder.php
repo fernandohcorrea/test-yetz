@@ -24,10 +24,6 @@ class PlayerSeeder extends Seeder
                 'soccer_field_id' => $soccer_field->id,
                 'player_id' => $player->id,
             ]);
-            DB::table('game_player')->insert([
-                'game_id' => $game->id,
-                'player_id' => $player->id,
-            ]);
         }
     }
 }

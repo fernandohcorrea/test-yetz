@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('soccer_field_player', function (Blueprint $table) {
             $table->bigInteger('soccer_field_id')->unsigned();
             $table->bigInteger('player_id')->unsigned();
+            $table->primary(['soccer_field_id', 'player_id'])->unique();
 
             $table->foreign('soccer_field_id')
                 ->references('id')

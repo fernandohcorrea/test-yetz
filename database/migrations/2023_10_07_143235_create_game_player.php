@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('game_player', function (Blueprint $table) {
             $table->bigInteger('game_id')->unsigned();
             $table->bigInteger('player_id')->unsigned();
+            $table->primary(['game_id', 'player_id'])->unique();
 
             $table->foreign('game_id')->references('id')->on('games');
             $table->foreign('player_id')->references('id')->on('players');

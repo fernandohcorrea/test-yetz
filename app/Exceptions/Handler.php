@@ -24,7 +24,22 @@ class Handler extends ExceptionHandler
     public function register(): void
     {
         $this->reportable(function (Throwable $e) {
-            //
         });
+    }
+
+    public function render($request, \Throwable $exception)
+    {
+
+        if ($exception instanceof CustomHttpException) {
+            return response()->json(
+                [
+                    'success' => false,
+                    'message' => $exception->getMessage(),
+                ],
+                $exception->getCode()
+            );
+        }
+
+        return parent::render($request, $exception);
     }
 }
