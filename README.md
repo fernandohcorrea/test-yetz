@@ -35,17 +35,17 @@ desenvolver uma aplicação que sorteasse as equipes, com base nas habilidades d
 Essa é sua tarefa.
 
 ### REQUISITOS
-* Armazenar dados dos jogadores: Nome, nível (de 1 a 5, sendo 1 o pior e 5 o melhor) e se o jogador é goleiro(sim/não).
-* Permitir ao usuário marcar quem confirmou presença.
-* Definir o número de jogadores por time.
-* Sortear os jogadores em pelo menos dois times, considerando a quantidade de jogadores definidos e os que foram marcados como
+* ☑️ Armazenar dados dos jogadores: Nome, nível (de 1 a 5, sendo 1 o pior e 5 o melhor) e se o jogador é goleiro(sim/não).
+* ☑️ Permitir ao usuário marcar quem confirmou presença.
+* ☑️ Definir o número de jogadores por time.
+* ☑️ Sortear os jogadores em pelo menos dois times, considerando a quantidade de jogadores definidos e os que foram marcados como
 presentes.
-* Quando houver mais de dois times completos, é permitido ao último time ficar com o número de jogadores menor do que aquele definido
+* ☑️ Quando houver mais de dois times completos, é permitido ao último time ficar com o número de jogadores menor do que aquele definido
 pelo usuário.
-* Não permitir que um time tenha um número maior de jogadores do que foi determinado pelo usuário antes do sorteio.
-* Não permitir o sorteio, caso o número total de confirmados seja menor que Nj*2, sendo 'Nj' o número de jogadores por time (ex: para
+* ☑️ Não permitir que um time tenha um número maior de jogadores do que foi determinado pelo usuário antes do sorteio.
+* ☑️ Não permitir o sorteio, caso o número total de confirmados seja menor que Nj*2, sendo 'Nj' o número de jogadores por time (ex: para
 um sorteio com 5 jogadores por time, o mínimo de confirmados deve ser 10).
-* Não permitir mais de 1 goleiro no mesmo time.
+* ☑️ Não permitir mais de 1 goleiro no mesmo time.
 - Será um diferencial para o desenvolvedor, se a aplicação considerar o nível dos jogadores ao executar o sorteio, deixando os times o mais
 balanceado possível (ninguém quer jogar no time dos "perebas", nem jogar contra o time da "panelinha").
 
@@ -60,3 +60,9 @@ balanceado possível (ninguém quer jogar no time dos "perebas", nem jogar contr
 Modelo de entidade e relacionamento proposto.
 <p align="center"><img src="https://github.com/fernandohcorrea/test-yetz/blob/main/docs/Mer/mer.png?raw=true" width="400" alt="Yetz Logo"></p>
 
+# Postman
+
+Postman Docs: 
+<a href="https://github.com/fernandohcorrea/test-yetz/tree/main/docs/Postman" target="_blank">
+link
+</a>
